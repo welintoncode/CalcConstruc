@@ -120,7 +120,7 @@
             this.txPrecioCementoD.Location = new System.Drawing.Point(213, 223);
             this.txPrecioCementoD.Name = "txPrecioCementoD";
             this.txPrecioCementoD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioCementoD.TabIndex = 5;
+            this.txPrecioCementoD.TabIndex = 11;
             this.txPrecioCementoD.Text = "470";
             // 
             // txPrecioBlockD
@@ -129,7 +129,7 @@
             this.txPrecioBlockD.Location = new System.Drawing.Point(213, 187);
             this.txPrecioBlockD.Name = "txPrecioBlockD";
             this.txPrecioBlockD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioBlockD.TabIndex = 5;
+            this.txPrecioBlockD.TabIndex = 10;
             this.txPrecioBlockD.Text = "45";
             // 
             // label20
@@ -158,7 +158,7 @@
             this.txJunta.Location = new System.Drawing.Point(213, 109);
             this.txJunta.Name = "txJunta";
             this.txJunta.Size = new System.Drawing.Size(177, 30);
-            this.txJunta.TabIndex = 5;
+            this.txJunta.TabIndex = 8;
             this.txJunta.Text = "0.02";
             // 
             // txDesperdicioD
@@ -167,7 +167,7 @@
             this.txDesperdicioD.Location = new System.Drawing.Point(213, 73);
             this.txDesperdicioD.Name = "txDesperdicioD";
             this.txDesperdicioD.Size = new System.Drawing.Size(177, 30);
-            this.txDesperdicioD.TabIndex = 5;
+            this.txDesperdicioD.TabIndex = 7;
             this.txDesperdicioD.Text = "5";
             // 
             // label5
@@ -191,7 +191,7 @@
             this.cbTipoMorteroD.Location = new System.Drawing.Point(213, 148);
             this.cbTipoMorteroD.Name = "cbTipoMorteroD";
             this.cbTipoMorteroD.Size = new System.Drawing.Size(177, 33);
-            this.cbTipoMorteroD.TabIndex = 3;
+            this.cbTipoMorteroD.TabIndex = 9;
             this.cbTipoMorteroD.Text = "1:3";
             this.cbTipoMorteroD.SelectedIndexChanged += new System.EventHandler(this.cbTipoMorteroD_SelectedIndexChanged);
             // 
@@ -216,7 +216,7 @@
             this.cbTipoBlock.Location = new System.Drawing.Point(213, 34);
             this.cbTipoBlock.Name = "cbTipoBlock";
             this.cbTipoBlock.Size = new System.Drawing.Size(177, 33);
-            this.cbTipoBlock.TabIndex = 3;
+            this.cbTipoBlock.TabIndex = 6;
             this.cbTipoBlock.Text = "6";
             this.cbTipoBlock.SelectedIndexChanged += new System.EventHandler(this.cbTipoBlock_SelectedIndexChanged);
             // 
@@ -259,7 +259,7 @@
             this.txVigasColumnasD.Location = new System.Drawing.Point(211, 119);
             this.txVigasColumnasD.Name = "txVigasColumnasD";
             this.txVigasColumnasD.Size = new System.Drawing.Size(178, 30);
-            this.txVigasColumnasD.TabIndex = 5;
+            this.txVigasColumnasD.TabIndex = 14;
             this.txVigasColumnasD.Text = "0";
             // 
             // txVentanasD
@@ -268,7 +268,7 @@
             this.txVentanasD.Location = new System.Drawing.Point(211, 83);
             this.txVentanasD.Name = "txVentanasD";
             this.txVentanasD.Size = new System.Drawing.Size(178, 30);
-            this.txVentanasD.TabIndex = 5;
+            this.txVentanasD.TabIndex = 13;
             this.txVentanasD.Text = "0";
             // 
             // txPuertasD
@@ -277,7 +277,7 @@
             this.txPuertasD.Location = new System.Drawing.Point(211, 47);
             this.txPuertasD.Name = "txPuertasD";
             this.txPuertasD.Size = new System.Drawing.Size(178, 30);
-            this.txPuertasD.TabIndex = 5;
+            this.txPuertasD.TabIndex = 12;
             this.txPuertasD.Text = "0";
             // 
             // label18
@@ -316,7 +316,7 @@
             this.txAltura.Location = new System.Drawing.Point(104, 153);
             this.txAltura.Name = "txAltura";
             this.txAltura.Size = new System.Drawing.Size(88, 30);
-            this.txAltura.TabIndex = 5;
+            this.txAltura.TabIndex = 3;
             this.txAltura.Text = "0";
             // 
             // txBase
@@ -325,7 +325,7 @@
             this.txBase.Location = new System.Drawing.Point(104, 117);
             this.txBase.Name = "txBase";
             this.txBase.Size = new System.Drawing.Size(88, 30);
-            this.txBase.TabIndex = 5;
+            this.txBase.TabIndex = 2;
             this.txBase.Text = "0";
             // 
             // lbAlturaD
@@ -354,7 +354,7 @@
             this.btnCalcular.Location = new System.Drawing.Point(664, 534);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(196, 168);
-            this.btnCalcular.TabIndex = 2;
+            this.btnCalcular.TabIndex = 15;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
@@ -644,7 +644,7 @@
             this.cbTipoAreaD.Location = new System.Drawing.Point(166, 67);
             this.cbTipoAreaD.Name = "cbTipoAreaD";
             this.cbTipoAreaD.Size = new System.Drawing.Size(224, 33);
-            this.cbTipoAreaD.TabIndex = 3;
+            this.cbTipoAreaD.TabIndex = 1;
             this.cbTipoAreaD.Text = "Cuadrado";
             this.cbTipoAreaD.SelectedIndexChanged += new System.EventHandler(this.cbTipoAreaD_SelectedIndexChanged);
             // 
@@ -684,7 +684,7 @@
             this.txBase2D.Location = new System.Drawing.Point(302, 117);
             this.txBase2D.Name = "txBase2D";
             this.txBase2D.Size = new System.Drawing.Size(88, 30);
-            this.txBase2D.TabIndex = 5;
+            this.txBase2D.TabIndex = 4;
             this.txBase2D.Text = "0";
             // 
             // lbA2
@@ -713,7 +713,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(453, 534);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(200, 168);
-            this.btnLimpiar.TabIndex = 2;
+            this.btnLimpiar.TabIndex = 16;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
