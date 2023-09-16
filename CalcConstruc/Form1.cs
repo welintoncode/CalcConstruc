@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CalcConstruc
 {
@@ -47,7 +48,7 @@ namespace CalcConstruc
         private void Form1_Load(object sender, EventArgs e)
         {
             txBase2D.Hide(); txAltura2D.Hide(); lbB2.Hide(); lbA2.Hide();
-        }        
+        }
 
         //VALIDA EL TIPO DE BLOCK
         private void cbTipoBlock_SelectedIndexChanged(object sender, EventArgs e)
@@ -222,6 +223,13 @@ namespace CalcConstruc
             totalCostos = Convert.ToDouble(txCostoBlockR.Text) + Convert.ToDouble(txCostoCementoR.Text);
             txCostoTotalR.Text = totalCostos.ToString("C");
 
+            //TABLA DE MATERIALES
+            dgMateriales.Rows.Clear();
+            string str = anchoBlock.ToString("f2") + "X" + alturaBlock.ToString("f2") + "X" + largoBlock.ToString("f2");
+            dgMateriales.Rows.Add("Block", cantidadBlockTotalMasDesperdicio, str);
+            dgMateriales.Rows.Add("Cemento", cementoPorMetroMasDesperdicio, "Funda 42.5kg");
+            dgMateriales.Rows.Add("Arena", arenaPorMetroMasDesperdicio.ToString("f3"), "m3");
+            dgMateriales.Rows.Add("Agua", aguaPorMetroMasDesperdicio, "Litros");
         }
     }
 }
