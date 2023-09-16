@@ -86,7 +86,6 @@
             this.lbB2 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.dgMateriales = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -736,14 +735,6 @@
             this.panel1.Size = new System.Drawing.Size(456, 44);
             this.panel1.TabIndex = 17;
             // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(17, 722);
-            this.splitter1.TabIndex = 18;
-            this.splitter1.TabStop = false;
-            // 
             // dgMateriales
             // 
             this.dgMateriales.AllowUserToAddRows = false;
@@ -802,7 +793,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1474, 722);
             this.Controls.Add(this.dgMateriales);
-            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -893,7 +883,6 @@
         private System.Windows.Forms.TextBox txAltura2D;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.DataGridView dgMateriales;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn descrip;
