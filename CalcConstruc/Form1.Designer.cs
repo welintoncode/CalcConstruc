@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txPrecioCementoD = new System.Windows.Forms.TextBox();
@@ -760,6 +762,14 @@
             this.descrip,
             this.cant,
             this.uni});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgMateriales.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgMateriales.Location = new System.Drawing.Point(866, 74);
             this.dgMateriales.Name = "dgMateriales";
             this.dgMateriales.RowHeadersVisible = false;
@@ -830,6 +840,14 @@
             this.dgCosto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgCosto.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgCosto.Location = new System.Drawing.Point(866, 348);
             this.dgCosto.Name = "dgCosto";
             this.dgCosto.RowHeadersVisible = false;
@@ -875,7 +893,7 @@
             this.lbCostoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCostoR.Location = new System.Drawing.Point(3, 6);
             this.lbCostoR.Name = "lbCostoR";
-            this.lbCostoR.Size = new System.Drawing.Size(36, 38);
+            this.lbCostoR.Size = new System.Drawing.Size(24, 25);
             this.lbCostoR.TabIndex = 1;
             this.lbCostoR.Text = "0";
             // 
@@ -884,7 +902,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1347, 722);
+            this.ClientSize = new System.Drawing.Size(1347, 736);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgCosto);
             this.Controls.Add(this.dgMateriales);

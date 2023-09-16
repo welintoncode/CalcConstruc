@@ -165,6 +165,10 @@ namespace CalcConstruc
             txCostoBlockR.Text = "0";
             txCostoCementoR.Text = "0";
             txCostoTotalR.Text = "0";
+
+            dgMateriales.Rows.Clear();
+            dgCosto.Rows.Clear();
+            lbCostoR.Text = "0";
         }
 
         //BOTON CALCULAR
