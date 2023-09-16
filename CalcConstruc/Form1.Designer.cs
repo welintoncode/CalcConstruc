@@ -91,6 +91,14 @@
             this.descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgCosto = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbCostoR = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -98,6 +106,9 @@
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgMateriales)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCosto)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -732,7 +743,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(866, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 44);
+            this.panel1.Size = new System.Drawing.Size(456, 36);
             this.panel1.TabIndex = 17;
             // 
             // dgMateriales
@@ -749,7 +760,7 @@
             this.descrip,
             this.cant,
             this.uni});
-            this.dgMateriales.Location = new System.Drawing.Point(866, 88);
+            this.dgMateriales.Location = new System.Drawing.Point(866, 74);
             this.dgMateriales.Name = "dgMateriales";
             this.dgMateriales.RowHeadersVisible = false;
             this.dgMateriales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -762,7 +773,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(172, 9);
+            this.label1.Location = new System.Drawing.Point(157, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 32);
             this.label1.TabIndex = 1;
@@ -786,13 +797,99 @@
             this.uni.MinimumWidth = 8;
             this.uni.Name = "uni";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(866, 312);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(456, 36);
+            this.panel2.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(179, 1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Costos";
+            // 
+            // dgCosto
+            // 
+            this.dgCosto.AllowUserToAddRows = false;
+            this.dgCosto.AllowUserToDeleteRows = false;
+            this.dgCosto.AllowUserToResizeColumns = false;
+            this.dgCosto.AllowUserToResizeRows = false;
+            this.dgCosto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgCosto.BackgroundColor = System.Drawing.Color.White;
+            this.dgCosto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgCosto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCosto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dgCosto.Location = new System.Drawing.Point(866, 348);
+            this.dgCosto.Name = "dgCosto";
+            this.dgCosto.RowHeadersVisible = false;
+            this.dgCosto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgCosto.RowTemplate.Height = 28;
+            this.dgCosto.Size = new System.Drawing.Size(456, 126);
+            this.dgCosto.TabIndex = 19;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Costo";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(999, 495);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(124, 25);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Costo Total";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGreen;
+            this.panel3.Controls.Add(this.lbCostoR);
+            this.panel3.Location = new System.Drawing.Point(1135, 488);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 39);
+            this.panel3.TabIndex = 20;
+            // 
+            // lbCostoR
+            // 
+            this.lbCostoR.AutoSize = true;
+            this.lbCostoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCostoR.Location = new System.Drawing.Point(3, 6);
+            this.lbCostoR.Name = "lbCostoR";
+            this.lbCostoR.Size = new System.Drawing.Size(36, 38);
+            this.lbCostoR.TabIndex = 1;
+            this.lbCostoR.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1474, 722);
+            this.ClientSize = new System.Drawing.Size(1347, 722);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.dgCosto);
             this.Controls.Add(this.dgMateriales);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -820,7 +917,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgMateriales)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCosto)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -888,6 +991,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descrip;
         private System.Windows.Forms.DataGridViewTextBoxColumn cant;
         private System.Windows.Forms.DataGridViewTextBoxColumn uni;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgCosto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbCostoR;
     }
 }
 

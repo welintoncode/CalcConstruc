@@ -225,11 +225,18 @@ namespace CalcConstruc
 
             //TABLA DE MATERIALES
             dgMateriales.Rows.Clear();
-            string str = anchoBlock.ToString("f2") + "X" + alturaBlock.ToString("f2") + "X" + largoBlock.ToString("f2");
-            dgMateriales.Rows.Add("Block", cantidadBlockTotalMasDesperdicio, str);
+            string Tblock = anchoBlock.ToString("f2") + "X" + alturaBlock.ToString("f2") + "X" + largoBlock.ToString("f2");
+            dgMateriales.Rows.Add("Block", cantidadBlockTotalMasDesperdicio, Tblock);
             dgMateriales.Rows.Add("Cemento", cementoPorMetroMasDesperdicio, "Funda 42.5kg");
             dgMateriales.Rows.Add("Arena", arenaPorMetroMasDesperdicio.ToString("f3"), "m3");
             dgMateriales.Rows.Add("Agua", aguaPorMetroMasDesperdicio, "Litros");
+
+            //TABLA DE COSTOS
+            dgCosto.Rows.Clear();
+            dgCosto.Rows.Add("Costo Block", precioBlock);
+            dgCosto.Rows.Add("Costo Cemento", precioCemento);
+            lbCostoR.Text = totalCostos.ToString("C");
+
         }
     }
 }
