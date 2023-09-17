@@ -56,21 +56,8 @@
             this.lbAlturaD = new System.Windows.Forms.Label();
             this.lbBaseD = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txCantidadAguaR = new System.Windows.Forms.TextBox();
             this.txAreaTotalR = new System.Windows.Forms.TextBox();
-            this.txCantidadArenaR = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txCantidadCementoR = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txCantidadBlockR = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.cbTipoAreaD = new System.Windows.Forms.ComboBox();
@@ -94,8 +81,11 @@
             this.label23 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbCostoR = new System.Windows.Forms.Label();
+            this.txCantidadBlockR = new System.Windows.Forms.TextBox();
+            this.txCantidadCementoR = new System.Windows.Forms.TextBox();
+            this.txCantidadArenaR = new System.Windows.Forms.TextBox();
+            this.txCantidadAguaR = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -120,7 +110,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 239);
+            this.groupBox1.Location = new System.Drawing.Point(23, 291);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(403, 280);
             this.groupBox1.TabIndex = 0;
@@ -364,182 +354,34 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(664, 534);
+            this.btnCalcular.Location = new System.Drawing.Point(696, 589);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(196, 168);
+            this.btnCalcular.Size = new System.Drawing.Size(196, 149);
             this.btnCalcular.TabIndex = 15;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txCantidadAguaR);
-            this.groupBox2.Controls.Add(this.txAreaTotalR);
-            this.groupBox2.Controls.Add(this.txCantidadArenaR);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txCantidadCementoR);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.txCantidadBlockR);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(453, 24);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(407, 258);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Materiales";
-            // 
-            // txCantidadAguaR
-            // 
-            this.txCantidadAguaR.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.txCantidadAguaR.Enabled = false;
-            this.txCantidadAguaR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCantidadAguaR.Location = new System.Drawing.Point(207, 175);
-            this.txCantidadAguaR.Name = "txCantidadAguaR";
-            this.txCantidadAguaR.Size = new System.Drawing.Size(128, 30);
-            this.txCantidadAguaR.TabIndex = 5;
-            this.txCantidadAguaR.Text = "0";
             // 
             // txAreaTotalR
             // 
             this.txAreaTotalR.BackColor = System.Drawing.Color.PaleTurquoise;
             this.txAreaTotalR.Enabled = false;
             this.txAreaTotalR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txAreaTotalR.Location = new System.Drawing.Point(207, 211);
+            this.txAreaTotalR.Location = new System.Drawing.Point(211, 212);
             this.txAreaTotalR.Name = "txAreaTotalR";
             this.txAreaTotalR.Size = new System.Drawing.Size(128, 30);
             this.txAreaTotalR.TabIndex = 5;
             this.txAreaTotalR.Text = "0";
             // 
-            // txCantidadArenaR
-            // 
-            this.txCantidadArenaR.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.txCantidadArenaR.Enabled = false;
-            this.txCantidadArenaR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCantidadArenaR.Location = new System.Drawing.Point(207, 135);
-            this.txCantidadArenaR.Name = "txCantidadArenaR";
-            this.txCantidadArenaR.Size = new System.Drawing.Size(128, 30);
-            this.txCantidadArenaR.TabIndex = 5;
-            this.txCantidadArenaR.Text = "0";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(21, 175);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(142, 22);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Cantidad Agua";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 211);
+            this.label6.Location = new System.Drawing.Point(85, 212);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 22);
             this.label6.TabIndex = 1;
             this.label6.Text = "Area Total";
-            // 
-            // txCantidadCementoR
-            // 
-            this.txCantidadCementoR.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.txCantidadCementoR.Enabled = false;
-            this.txCantidadCementoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCantidadCementoR.Location = new System.Drawing.Point(207, 94);
-            this.txCantidadCementoR.Name = "txCantidadCementoR";
-            this.txCantidadCementoR.Size = new System.Drawing.Size(128, 30);
-            this.txCantidadCementoR.TabIndex = 5;
-            this.txCantidadCementoR.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 135);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 22);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Cantidad Arena";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(341, 175);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 22);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Lt.";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(341, 135);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 22);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "m3";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(341, 94);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 22);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Fd.";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(341, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 22);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Ud.";
-            // 
-            // txCantidadBlockR
-            // 
-            this.txCantidadBlockR.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.txCantidadBlockR.Enabled = false;
-            this.txCantidadBlockR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCantidadBlockR.Location = new System.Drawing.Point(207, 53);
-            this.txCantidadBlockR.Name = "txCantidadBlockR";
-            this.txCantidadBlockR.Size = new System.Drawing.Size(128, 30);
-            this.txCantidadBlockR.TabIndex = 5;
-            this.txCantidadBlockR.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(21, 94);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 22);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Cantidad Cemento";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(21, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 22);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Cantidad Block";
             // 
             // groupBox4
             // 
@@ -550,7 +392,7 @@
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.txPuertasD);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(23, 534);
+            this.groupBox4.Location = new System.Drawing.Point(23, 586);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(403, 170);
             this.groupBox4.TabIndex = 6;
@@ -587,9 +429,11 @@
             this.groupBox5.Controls.Add(this.chCompleta);
             this.groupBox5.Controls.Add(this.txAltura2D);
             this.groupBox5.Controls.Add(this.txBase2D);
+            this.groupBox5.Controls.Add(this.txAreaTotalR);
             this.groupBox5.Controls.Add(this.cbTipoAreaD);
             this.groupBox5.Controls.Add(this.lbA2);
             this.groupBox5.Controls.Add(this.lbAlturaD);
+            this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.lbB2);
             this.groupBox5.Controls.Add(this.lbBaseD);
             this.groupBox5.Controls.Add(this.txBase);
@@ -598,7 +442,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(23, 24);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(403, 205);
+            this.groupBox5.Size = new System.Drawing.Size(403, 261);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Area";
@@ -644,9 +488,9 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(453, 534);
+            this.btnLimpiar.Location = new System.Drawing.Point(485, 589);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(200, 168);
+            this.btnLimpiar.Size = new System.Drawing.Size(200, 149);
             this.btnLimpiar.TabIndex = 16;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -656,7 +500,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(866, 38);
+            this.panel1.Location = new System.Drawing.Point(453, 38);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 36);
             this.panel1.TabIndex = 17;
@@ -683,7 +527,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgMateriales.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgMateriales.Location = new System.Drawing.Point(866, 74);
+            this.dgMateriales.Location = new System.Drawing.Point(453, 74);
             this.dgMateriales.Name = "dgMateriales";
             this.dgMateriales.RowHeadersVisible = false;
             this.dgMateriales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -724,7 +568,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(866, 312);
+            this.panel2.Location = new System.Drawing.Point(453, 312);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(456, 36);
             this.panel2.TabIndex = 17;
@@ -761,7 +605,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgCosto.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgCosto.Location = new System.Drawing.Point(866, 348);
+            this.dgCosto.Location = new System.Drawing.Point(453, 348);
             this.dgCosto.Name = "dgCosto";
             this.dgCosto.RowHeadersVisible = false;
             this.dgCosto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -785,7 +629,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(999, 495);
+            this.label23.Location = new System.Drawing.Point(586, 495);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(124, 25);
             this.label23.TabIndex = 1;
@@ -795,7 +639,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGreen;
             this.panel3.Controls.Add(this.lbCostoR);
-            this.panel3.Location = new System.Drawing.Point(1135, 488);
+            this.panel3.Location = new System.Drawing.Point(722, 488);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 39);
             this.panel3.TabIndex = 20;
@@ -810,23 +654,74 @@
             this.lbCostoR.TabIndex = 1;
             this.lbCostoR.Text = "0";
             // 
+            // txCantidadBlockR
+            // 
+            this.txCantidadBlockR.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txCantidadBlockR.Enabled = false;
+            this.txCantidadBlockR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCantidadBlockR.Location = new System.Drawing.Point(1121, 60);
+            this.txCantidadBlockR.Name = "txCantidadBlockR";
+            this.txCantidadBlockR.Size = new System.Drawing.Size(54, 30);
+            this.txCantidadBlockR.TabIndex = 5;
+            this.txCantidadBlockR.Text = "0";
+            this.txCantidadBlockR.Visible = false;
+            // 
+            // txCantidadCementoR
+            // 
+            this.txCantidadCementoR.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txCantidadCementoR.Enabled = false;
+            this.txCantidadCementoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCantidadCementoR.Location = new System.Drawing.Point(1121, 101);
+            this.txCantidadCementoR.Name = "txCantidadCementoR";
+            this.txCantidadCementoR.Size = new System.Drawing.Size(54, 30);
+            this.txCantidadCementoR.TabIndex = 5;
+            this.txCantidadCementoR.Text = "0";
+            this.txCantidadCementoR.Visible = false;
+            // 
+            // txCantidadArenaR
+            // 
+            this.txCantidadArenaR.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txCantidadArenaR.Enabled = false;
+            this.txCantidadArenaR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCantidadArenaR.Location = new System.Drawing.Point(1121, 142);
+            this.txCantidadArenaR.Name = "txCantidadArenaR";
+            this.txCantidadArenaR.Size = new System.Drawing.Size(54, 30);
+            this.txCantidadArenaR.TabIndex = 5;
+            this.txCantidadArenaR.Text = "0";
+            this.txCantidadArenaR.Visible = false;
+            // 
+            // txCantidadAguaR
+            // 
+            this.txCantidadAguaR.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txCantidadAguaR.Enabled = false;
+            this.txCantidadAguaR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCantidadAguaR.Location = new System.Drawing.Point(1121, 182);
+            this.txCantidadAguaR.Name = "txCantidadAguaR";
+            this.txCantidadAguaR.Size = new System.Drawing.Size(54, 30);
+            this.txCantidadAguaR.TabIndex = 5;
+            this.txCantidadAguaR.Text = "0";
+            this.txCantidadAguaR.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1347, 736);
+            this.ClientSize = new System.Drawing.Size(950, 776);
+            this.Controls.Add(this.txCantidadAguaR);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.txCantidadArenaR);
             this.Controls.Add(this.dgCosto);
+            this.Controls.Add(this.txCantidadCementoR);
             this.Controls.Add(this.dgMateriales);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txCantidadBlockR);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -836,8 +731,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -869,25 +762,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbAlturaD;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txAreaTotalR;
-        private System.Windows.Forms.TextBox txCantidadArenaR;
-        private System.Windows.Forms.TextBox txCantidadCementoR;
-        private System.Windows.Forms.TextBox txCantidadBlockR;
-        private System.Windows.Forms.TextBox txCantidadAguaR;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txVentanasD;
         private System.Windows.Forms.TextBox txPuertasD;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbTipoMorteroD;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txVigasColumnasD;
@@ -920,6 +800,10 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbCostoR;
+        private System.Windows.Forms.TextBox txCantidadBlockR;
+        private System.Windows.Forms.TextBox txCantidadCementoR;
+        private System.Windows.Forms.TextBox txCantidadArenaR;
+        private System.Windows.Forms.TextBox txCantidadAguaR;
     }
 }
 
