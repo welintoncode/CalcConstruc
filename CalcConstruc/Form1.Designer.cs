@@ -71,13 +71,6 @@
             this.txCantidadBlockR = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txCostoTotalR = new System.Windows.Forms.TextBox();
-            this.txCostoCementoR = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txCostoBlockR = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.cbTipoAreaD = new System.Windows.Forms.ComboBox();
@@ -103,7 +96,6 @@
             this.lbCostoR = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -549,85 +541,6 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Cantidad Block";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txCostoTotalR);
-            this.groupBox3.Controls.Add(this.txCostoCementoR);
-            this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.txCostoBlockR);
-            this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(453, 297);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(407, 209);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Costos";
-            // 
-            // txCostoTotalR
-            // 
-            this.txCostoTotalR.BackColor = System.Drawing.Color.LimeGreen;
-            this.txCostoTotalR.Enabled = false;
-            this.txCostoTotalR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCostoTotalR.Location = new System.Drawing.Point(207, 155);
-            this.txCostoTotalR.Name = "txCostoTotalR";
-            this.txCostoTotalR.Size = new System.Drawing.Size(128, 30);
-            this.txCostoTotalR.TabIndex = 5;
-            this.txCostoTotalR.Text = "0";
-            // 
-            // txCostoCementoR
-            // 
-            this.txCostoCementoR.BackColor = System.Drawing.Color.LimeGreen;
-            this.txCostoCementoR.Enabled = false;
-            this.txCostoCementoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCostoCementoR.Location = new System.Drawing.Point(207, 94);
-            this.txCostoCementoR.Name = "txCostoCementoR";
-            this.txCostoCementoR.Size = new System.Drawing.Size(128, 30);
-            this.txCostoCementoR.TabIndex = 5;
-            this.txCostoCementoR.Text = "0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(21, 155);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(114, 22);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Costo Total";
-            // 
-            // txCostoBlockR
-            // 
-            this.txCostoBlockR.BackColor = System.Drawing.Color.LimeGreen;
-            this.txCostoBlockR.Enabled = false;
-            this.txCostoBlockR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCostoBlockR.Location = new System.Drawing.Point(207, 53);
-            this.txCostoBlockR.Name = "txCostoBlockR";
-            this.txCostoBlockR.Size = new System.Drawing.Size(128, 30);
-            this.txCostoBlockR.TabIndex = 5;
-            this.txCostoBlockR.Text = "0";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(21, 94);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(147, 22);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Costo Cemento";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(20, 53);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(117, 22);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "Costo Block";
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txVentanasD);
@@ -911,7 +824,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.groupBox2);
@@ -926,8 +838,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -983,17 +893,10 @@
         private System.Windows.Forms.TextBox txVigasColumnasD;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox chCompleta;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txCostoCementoR;
-        private System.Windows.Forms.TextBox txCostoBlockR;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox txPrecioBlockD;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txPrecioCementoD;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txCostoTotalR;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox cbTipoAreaD;

@@ -162,9 +162,6 @@ namespace CalcConstruc
             txCantidadArenaR.Text = "0";
             txCantidadAguaR.Text = "0";
             txAreaTotalR.Text = "0";
-            txCostoBlockR.Text = "0";
-            txCostoCementoR.Text = "0";
-            txCostoTotalR.Text = "0";
 
             dgMateriales.Rows.Clear();
             dgCosto.Rows.Clear();
@@ -222,10 +219,7 @@ namespace CalcConstruc
             txAreaTotalR.Text = areaParedMenosHuecos.ToString();
 
             //RESULTADOS COSTOS
-            txCostoBlockR.Text = precioBlock.ToString();
-            txCostoCementoR.Text = precioCemento.ToString();
-            totalCostos = Convert.ToDouble(txCostoBlockR.Text) + Convert.ToDouble(txCostoCementoR.Text);
-            txCostoTotalR.Text = totalCostos.ToString("C");
+            totalCostos = (Convert.ToDouble(txPrecioBlockD.Text) * Convert.ToDouble(txCantidadBlockR.Text)) + (Convert.ToDouble(txPrecioCementoD.Text) * Convert.ToDouble(txCantidadCementoR.Text));
 
             //TABLA DE MATERIALES
             dgMateriales.Rows.Clear();
