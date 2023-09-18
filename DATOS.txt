@@ -1,0 +1,4 @@
+- Crear menu
+- crear db sqlite
+- crear opcion configuracion
+- crear modulo calcular empañete
