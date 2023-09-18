@@ -1,2 +1,2 @@
 # CalcConstruc
-![](https://raw.githubusercontent.com/welintoncode/CalcConstruc/main/IMG.png)
+![](https://github.com/welintoncode/CalcConstruc/blob/main/IMG.png)
