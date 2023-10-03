@@ -22,6 +22,7 @@ namespace CalcConstruc
         double areaBlock = 0;
         double precioBlock = 0;
         double precioCemento = 0;
+        double precioArena = 0;
         double totalCostos = 0;
         double tipoArea = 0;
 
@@ -210,6 +211,9 @@ namespace CalcConstruc
             //COSTO CEMENTO
             precioCemento = Convert.ToDouble(txPrecioCementoD.Text) * cementoPorMetroMasDesperdicio;
 
+            //COSTO ARENA
+            precioArena = Convert.ToDouble(txPrecioArenaD.Text) * arenaPorMetroMasDesperdicio;
+
 
             //RESULTADOS MATERIALES
             txCantidadBlockR.Text = cantidadBlockTotalMasDesperdicio.ToString();
@@ -219,7 +223,7 @@ namespace CalcConstruc
             txAreaTotalR.Text = areaParedMenosHuecos.ToString();
 
             //RESULTADOS COSTOS
-            totalCostos = (Convert.ToDouble(txPrecioBlockD.Text) * Convert.ToDouble(txCantidadBlockR.Text)) + (Convert.ToDouble(txPrecioCementoD.Text) * Convert.ToDouble(txCantidadCementoR.Text));
+            totalCostos = precioBlock + precioCemento + precioArena;
 
             //TABLA DE MATERIALES
             dgMateriales.Rows.Clear();
@@ -231,8 +235,9 @@ namespace CalcConstruc
 
             //TABLA DE COSTOS
             dgCosto.Rows.Clear();
-            dgCosto.Rows.Add("Costo Block", precioBlock);
-            dgCosto.Rows.Add("Costo Cemento", precioCemento);
+            dgCosto.Rows.Add("Costo Block", precioBlock.ToString("C"));
+            dgCosto.Rows.Add("Costo Cemento", precioCemento.ToString("C"));
+            dgCosto.Rows.Add("Costo Arena", precioArena.ToString("C"));
             lbCostoR.Text = totalCostos.ToString("C");
 
         }

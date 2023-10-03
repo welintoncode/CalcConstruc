@@ -68,8 +68,8 @@
             this.lbB2 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgMateriales = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgMateriales = new System.Windows.Forms.DataGridView();
             this.descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uni = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +85,8 @@
             this.txCantidadCementoR = new System.Windows.Forms.TextBox();
             this.txCantidadArenaR = new System.Windows.Forms.TextBox();
             this.txCantidadAguaR = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txPrecioArenaD = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -97,7 +99,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txPrecioArenaD);
             this.groupBox1.Controls.Add(this.txPrecioCementoD);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txPrecioBlockD);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label19);
@@ -112,7 +116,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(23, 291);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 280);
+            this.groupBox1.Size = new System.Drawing.Size(403, 313);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
@@ -354,7 +358,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(696, 589);
+            this.btnCalcular.Location = new System.Drawing.Point(698, 628);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(196, 149);
             this.btnCalcular.TabIndex = 15;
@@ -392,7 +396,7 @@
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.txPuertasD);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(23, 586);
+            this.groupBox4.Location = new System.Drawing.Point(23, 622);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(403, 170);
             this.groupBox4.TabIndex = 6;
@@ -488,7 +492,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(485, 589);
+            this.btnLimpiar.Location = new System.Drawing.Point(487, 628);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(200, 149);
             this.btnLimpiar.TabIndex = 16;
@@ -504,6 +508,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 36);
             this.panel1.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(157, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Materiales";
             // 
             // dgMateriales
             // 
@@ -534,17 +549,6 @@
             this.dgMateriales.RowTemplate.Height = 28;
             this.dgMateriales.Size = new System.Drawing.Size(456, 218);
             this.dgMateriales.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(157, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Materiales";
             // 
             // descrip
             // 
@@ -610,7 +614,7 @@
             this.dgCosto.RowHeadersVisible = false;
             this.dgCosto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgCosto.RowTemplate.Height = 28;
-            this.dgCosto.Size = new System.Drawing.Size(456, 126);
+            this.dgCosto.Size = new System.Drawing.Size(456, 174);
             this.dgCosto.TabIndex = 19;
             // 
             // dataGridViewTextBoxColumn1
@@ -629,7 +633,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(586, 495);
+            this.label23.Location = new System.Drawing.Point(587, 541);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(124, 25);
             this.label23.TabIndex = 1;
@@ -639,7 +643,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGreen;
             this.panel3.Controls.Add(this.lbCostoR);
-            this.panel3.Location = new System.Drawing.Point(722, 488);
+            this.panel3.Location = new System.Drawing.Point(723, 534);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 39);
             this.panel3.TabIndex = 20;
@@ -702,12 +706,31 @@
             this.txCantidadAguaR.Text = "0";
             this.txCantidadAguaR.Visible = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(27, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(189, 33);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Precio Arena";
+            // 
+            // txPrecioArenaD
+            // 
+            this.txPrecioArenaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPrecioArenaD.Location = new System.Drawing.Point(213, 259);
+            this.txPrecioArenaD.Name = "txPrecioArenaD";
+            this.txPrecioArenaD.Size = new System.Drawing.Size(177, 30);
+            this.txPrecioArenaD.TabIndex = 11;
+            this.txPrecioArenaD.Text = "1395";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(950, 776);
+            this.ClientSize = new System.Drawing.Size(950, 804);
             this.Controls.Add(this.txCantidadAguaR);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txCantidadArenaR);
@@ -804,6 +827,8 @@
         private System.Windows.Forms.TextBox txCantidadCementoR;
         private System.Windows.Forms.TextBox txCantidadArenaR;
         private System.Windows.Forms.TextBox txCantidadAguaR;
+        private System.Windows.Forms.TextBox txPrecioArenaD;
+        private System.Windows.Forms.Label label7;
     }
 }
 
