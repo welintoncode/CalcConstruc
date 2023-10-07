@@ -1,6 +1,6 @@
 ﻿namespace CalcConstruc
 {
-    partial class Form1
+    partial class Principal
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,11 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txPrecioArenaD = new System.Windows.Forms.TextBox();
             this.txPrecioCementoD = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.txPrecioBlockD = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -85,8 +87,14 @@
             this.txCantidadCementoR = new System.Windows.Forms.TextBox();
             this.txCantidadArenaR = new System.Windows.Forms.TextBox();
             this.txCantidadAguaR = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txPrecioArenaD = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -95,6 +103,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCosto)).BeginInit();
             this.panel3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -107,19 +116,31 @@
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.txJunta);
             this.groupBox1.Controls.Add(this.txDesperdicioD);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.cbTipoMorteroD);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.cbTipoBlock);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 291);
+            this.groupBox1.Location = new System.Drawing.Point(23, 315);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(403, 313);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // txPrecioArenaD
+            // 
+            this.txPrecioArenaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPrecioArenaD.Location = new System.Drawing.Point(213, 259);
+            this.txPrecioArenaD.Name = "txPrecioArenaD";
+            this.txPrecioArenaD.Size = new System.Drawing.Size(177, 30);
+            this.txPrecioArenaD.TabIndex = 11;
+            this.txPrecioArenaD.Text = "1395";
             // 
             // txPrecioCementoD
             // 
@@ -129,6 +150,16 @@
             this.txPrecioCementoD.Size = new System.Drawing.Size(177, 30);
             this.txPrecioCementoD.TabIndex = 11;
             this.txPrecioCementoD.Text = "470";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(27, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 22);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Precio Arena";
             // 
             // txPrecioBlockD
             // 
@@ -231,7 +262,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 42);
+            this.label2.Location = new System.Drawing.Point(25, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 22);
             this.label2.TabIndex = 1;
@@ -358,7 +389,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(698, 628);
+            this.btnCalcular.Location = new System.Drawing.Point(698, 652);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(196, 149);
             this.btnCalcular.TabIndex = 15;
@@ -396,7 +427,7 @@
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.txPuertasD);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(23, 622);
+            this.groupBox4.Location = new System.Drawing.Point(23, 646);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(403, 170);
             this.groupBox4.TabIndex = 6;
@@ -444,7 +475,7 @@
             this.groupBox5.Controls.Add(this.label22);
             this.groupBox5.Controls.Add(this.txAltura);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(23, 24);
+            this.groupBox5.Location = new System.Drawing.Point(23, 48);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(403, 261);
             this.groupBox5.TabIndex = 6;
@@ -492,7 +523,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(487, 628);
+            this.btnLimpiar.Location = new System.Drawing.Point(487, 652);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(200, 149);
             this.btnLimpiar.TabIndex = 16;
@@ -504,7 +535,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(453, 38);
+            this.panel1.Location = new System.Drawing.Point(453, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 36);
             this.panel1.TabIndex = 17;
@@ -542,7 +573,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgMateriales.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgMateriales.Location = new System.Drawing.Point(453, 74);
+            this.dgMateriales.Location = new System.Drawing.Point(453, 98);
             this.dgMateriales.Name = "dgMateriales";
             this.dgMateriales.RowHeadersVisible = false;
             this.dgMateriales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -572,7 +603,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(453, 312);
+            this.panel2.Location = new System.Drawing.Point(453, 336);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(456, 36);
             this.panel2.TabIndex = 17;
@@ -609,7 +640,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgCosto.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgCosto.Location = new System.Drawing.Point(453, 348);
+            this.dgCosto.Location = new System.Drawing.Point(453, 372);
             this.dgCosto.Name = "dgCosto";
             this.dgCosto.RowHeadersVisible = false;
             this.dgCosto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -633,7 +664,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(587, 541);
+            this.label23.Location = new System.Drawing.Point(587, 565);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(124, 25);
             this.label23.TabIndex = 1;
@@ -643,7 +674,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGreen;
             this.panel3.Controls.Add(this.lbCostoR);
-            this.panel3.Location = new System.Drawing.Point(723, 534);
+            this.panel3.Location = new System.Drawing.Point(723, 558);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 39);
             this.panel3.TabIndex = 20;
@@ -706,31 +737,84 @@
             this.txCantidadAguaR.Text = "0";
             this.txCantidadAguaR.Visible = false;
             // 
-            // label7
+            // menuStrip1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 264);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(189, 33);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Precio Arena";
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
+            this.configuracionToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(928, 33);
+            this.menuStrip1.TabIndex = 21;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // txPrecioArenaD
+            // inicioToolStripMenuItem
             // 
-            this.txPrecioArenaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPrecioArenaD.Location = new System.Drawing.Point(213, 259);
-            this.txPrecioArenaD.Name = "txPrecioArenaD";
-            this.txPrecioArenaD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioArenaD.TabIndex = 11;
-            this.txPrecioArenaD.Text = "1395";
+            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saliToolStripMenuItem});
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
+            this.inicioToolStripMenuItem.Text = "Inicio";
             // 
-            // Form1
+            // saliToolStripMenuItem
+            // 
+            this.saliToolStripMenuItem.Name = "saliToolStripMenuItem";
+            this.saliToolStripMenuItem.Size = new System.Drawing.Size(141, 34);
+            this.saliToolStripMenuItem.Text = "Sali";
+            // 
+            // configuracionToolStripMenuItem
+            // 
+            this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(139, 29);
+            this.configuracionToolStripMenuItem.Text = "Configuracion";
+            this.configuracionToolStripMenuItem.Click += new System.EventHandler(this.configuracionToolStripMenuItem_Click);
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(22, 81);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 22);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "% Desperdicio";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(20, 39);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(133, 22);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Tipo de Block";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 22);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Junta";
+            // 
+            // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(950, 804);
+            this.ClientSize = new System.Drawing.Size(928, 843);
             this.Controls.Add(this.txCantidadAguaR);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txCantidadArenaR);
@@ -746,9 +830,11 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CALCULO DE MATERIALES";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -766,6 +852,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgCosto)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,6 +917,14 @@
         private System.Windows.Forms.TextBox txCantidadAguaR;
         private System.Windows.Forms.TextBox txPrecioArenaD;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saliToolStripMenuItem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
 

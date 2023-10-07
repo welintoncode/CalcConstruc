@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.Sqlite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
+
 namespace CalcConstruc
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
         double anchoBlock = 0.15;
         double alturaBlock = 0.20;
@@ -27,23 +29,32 @@ namespace CalcConstruc
         double tipoArea = 0;
 
         double areaPared = 0, areaPared2 = 0, areParedTotal, areaParedMenosHuecos;
-
         double blockPorMetro = 0, blockPorMetroMasDesperdicio = 0, cantidadBlockTotal = 0, cantidadBlockTotalMasDesperdicio = 0;
-
         double volumenMortero = 0;
-
         double cementokg = 454, arenaM3 = 1.10, aguaL = 250, fundaCemento = 42.5;
-
         double cementoPorMetro = 0, cementoPorMetroMasDesperdicio = 0;
-
         double arenaPorMetro = 0, arenaPorMetroMasDesperdicio = 0;
         double aguaPorMetro = 0, aguaPorMetroMasDesperdicio = 0;
 
-        public Form1()
+
+        frm_Configuracion formConfig = new frm_Configuracion();
+        frm_AcercaDe formAcerca = new frm_AcercaDe();
+        //conexion con = new conexion();
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formAcerca.ShowDialog();            
+        }
+
+        private void configuracionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formConfig.ShowDialog();
+        }
+
+
+        public Principal()
         {
             InitializeComponent();
-            cbTipoMorteroD.SelectedIndexChanged += cbTipoMorteroD_SelectedIndexChanged;
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
