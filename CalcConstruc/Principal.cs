@@ -1,5 +1,4 @@
-﻿using Microsoft.Data.Sqlite;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +11,14 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Data.SQLite;
 
 
 namespace CalcConstruc
-{
+{   
     public partial class Principal : Form
     {
+        frm_Configuracion conf = new frm_Configuracion();
         double anchoBlock = 0.15;
         double alturaBlock = 0.20;
         double largoBlock = 0.40;
@@ -55,6 +56,7 @@ namespace CalcConstruc
         public Principal()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -52,12 +52,13 @@
             // 
             // btnGuardar_CF
             // 
-            this.btnGuardar_CF.Location = new System.Drawing.Point(186, 353);
+            this.btnGuardar_CF.Location = new System.Drawing.Point(12, 356);
             this.btnGuardar_CF.Name = "btnGuardar_CF";
-            this.btnGuardar_CF.Size = new System.Drawing.Size(193, 64);
+            this.btnGuardar_CF.Size = new System.Drawing.Size(403, 64);
             this.btnGuardar_CF.TabIndex = 0;
             this.btnGuardar_CF.Text = "Guardar";
             this.btnGuardar_CF.UseVisualStyleBackColor = true;
+            this.btnGuardar_CF.Click += new System.EventHandler(this.btnGuardar_CF_Click);
             // 
             // label4
             // 
@@ -103,15 +104,10 @@
             // 
             this.cbTipoBlock_CF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoBlock_CF.FormattingEnabled = true;
-            this.cbTipoBlock_CF.Items.AddRange(new object[] {
-            "8",
-            "6",
-            "4"});
             this.cbTipoBlock_CF.Location = new System.Drawing.Point(213, 34);
             this.cbTipoBlock_CF.Name = "cbTipoBlock_CF";
             this.cbTipoBlock_CF.Size = new System.Drawing.Size(177, 33);
             this.cbTipoBlock_CF.TabIndex = 6;
-            this.cbTipoBlock_CF.Text = "6";
             // 
             // label17
             // 
@@ -127,15 +123,10 @@
             // 
             this.cbTipoMortero_CF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoMortero_CF.FormattingEnabled = true;
-            this.cbTipoMortero_CF.Items.AddRange(new object[] {
-            "1:2",
-            "1:3",
-            "1:4"});
             this.cbTipoMortero_CF.Location = new System.Drawing.Point(213, 148);
             this.cbTipoMortero_CF.Name = "cbTipoMortero_CF";
             this.cbTipoMortero_CF.Size = new System.Drawing.Size(177, 33);
             this.cbTipoMortero_CF.TabIndex = 9;
-            this.cbTipoMortero_CF.Text = "1:3";
             // 
             // label5
             // 
@@ -164,7 +155,6 @@
             this.txJunta_CF.Name = "txJunta_CF";
             this.txJunta_CF.Size = new System.Drawing.Size(177, 30);
             this.txJunta_CF.TabIndex = 8;
-            this.txJunta_CF.Text = "0.02";
             // 
             // label19
             // 
@@ -193,7 +183,6 @@
             this.txPrecioBlock_CF.Name = "txPrecioBlock_CF";
             this.txPrecioBlock_CF.Size = new System.Drawing.Size(177, 30);
             this.txPrecioBlock_CF.TabIndex = 10;
-            this.txPrecioBlock_CF.Text = "45";
             // 
             // label7
             // 
@@ -212,7 +201,6 @@
             this.txPrecioCemento_CF.Name = "txPrecioCemento_CF";
             this.txPrecioCemento_CF.Size = new System.Drawing.Size(177, 30);
             this.txPrecioCemento_CF.TabIndex = 11;
-            this.txPrecioCemento_CF.Text = "470";
             // 
             // txPrecioArena_CF
             // 
@@ -221,7 +209,6 @@
             this.txPrecioArena_CF.Name = "txPrecioArena_CF";
             this.txPrecioArena_CF.Size = new System.Drawing.Size(177, 30);
             this.txPrecioArena_CF.TabIndex = 11;
-            this.txPrecioArena_CF.Text = "1395";
             // 
             // groupBox2
             // 
@@ -257,16 +244,16 @@
             this.txDesperdicio_CF.Name = "txDesperdicio_CF";
             this.txDesperdicio_CF.Size = new System.Drawing.Size(177, 30);
             this.txDesperdicio_CF.TabIndex = 7;
-            this.txDesperdicio_CF.Text = "5";
             // 
             // frm_Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 440);
+            this.ClientSize = new System.Drawing.Size(438, 439);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnGuardar_CF);
             this.Name = "frm_Configuracion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Configuracion";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -282,18 +269,18 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox cbTipoMortero_CF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txJunta_CF;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txPrecioBlock_CF;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txPrecioCemento_CF;
-        private System.Windows.Forms.TextBox txPrecioArena_CF;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txDesperdicio_CF;
         public System.Windows.Forms.ComboBox cbTipoBlock_CF;
+        public System.Windows.Forms.ComboBox cbTipoMortero_CF;
+        public System.Windows.Forms.TextBox txJunta_CF;
+        public System.Windows.Forms.TextBox txPrecioBlock_CF;
+        public System.Windows.Forms.TextBox txPrecioCemento_CF;
+        public System.Windows.Forms.TextBox txPrecioArena_CF;
+        public System.Windows.Forms.TextBox txDesperdicio_CF;
     }
 }
