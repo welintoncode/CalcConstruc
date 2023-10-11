@@ -5,24 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace CalcConstruc
 {
     internal class conexion
     {      
-        public void conect()
+        private SQLiteConnection con = new SQLiteConnection("Data Source =db.db; Pooling=true");
+
+        public SQLiteConnection AbrirConexion()
         {
-            SQLiteConnection con = new SQLiteConnection("Data Source =db.db");
-            try
-            {
+            if (con.State == ConnectionState.Closed)
                 con.Open();
-                MessageBox.Show("Conectado a la base de datos");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Conectado a la base de datos" + ex.Message);
-            }
-        
+            return con;
+        }
+
+        public SQLiteConnection CerrarConexion()
+        {
+            if (con.State == ConnectionState.Open)
+                con.Close();
+            return con;
         }
 
     }

@@ -15,8 +15,9 @@ namespace CalcConstruc
 {
     public partial class frm_Configuracion : Form
     {
-        SQLiteConnection con = new SQLiteConnection("Data Source =db.db; Pooling=true");
-
+        //SQLiteConnection con = new SQLiteConnection("Data Source =db.db; Pooling=true");
+        private conexion con = new conexion();
+        public string desperdicio;
         public frm_Configuracion()
         {
             InitializeComponent();
@@ -24,11 +25,10 @@ namespace CalcConstruc
             CB_tipoBlock();            
             CB_tipoMortero();
 
-            con.Open();
             
 
             string tipoBlock = "SELECT tb.descripcion FROM tipoblock tb INNER JOIN datosconfig dc ON tb.id = dc.idTipoBlock";
-            SQLiteCommand cmd_tipoBlock = new SQLiteCommand(tipoBlock, con);
+            SQLiteCommand cmd_tipoBlock = new SQLiteCommand(tipoBlock, con.AbrirConexion());
             SQLiteDataReader dr_tipoBlock = cmd_tipoBlock.ExecuteReader();
 
             if (dr_tipoBlock.Read())
@@ -37,7 +37,7 @@ namespace CalcConstruc
             }
 
             string tipoMortero = "SELECT tm.descripcion FROM TipoMortero tm INNER JOIN datosconfig dc ON tm.id = dc.idTipoMortero";
-            SQLiteCommand cmd_tipoMortero = new SQLiteCommand(tipoMortero, con);
+            SQLiteCommand cmd_tipoMortero = new SQLiteCommand(tipoMortero, con.AbrirConexion());
             SQLiteDataReader dr_tipoMortero = cmd_tipoMortero.ExecuteReader();
 
             if (dr_tipoMortero.Read())
@@ -46,20 +46,20 @@ namespace CalcConstruc
             }
 
             string datos = "select desperdicio, junta, precioBlock, precioCemento, PrecioArena from datosconfig";
-            SQLiteCommand cmd_datos = new SQLiteCommand(datos, con);
+            SQLiteCommand cmd_datos = new SQLiteCommand(datos, con.AbrirConexion());
             SQLiteDataReader dr_datos = cmd_datos.ExecuteReader();
 
             if (dr_datos.Read())
             {
-                cbTipoMortero_CF.Text = dr_datos[0].ToString();
-                txDesperdicio_CF.Text = dr_datos[0].ToString();
+                desperdicio = dr_datos[0].ToString();
+                txDesperdicio_CF.Text = desperdicio;
                 txJunta_CF.Text = dr_datos[1].ToString();
                 txPrecioBlock_CF.Text = dr_datos[2].ToString();
                 txPrecioCemento_CF.Text = dr_datos[3].ToString();
                 txPrecioArena_CF.Text= dr_datos[4].ToString();
             }
 
-            con.Close();
+            con.CerrarConexion();
         }
 
 
@@ -69,7 +69,7 @@ namespace CalcConstruc
             try
             {
                 string query = "select descripcion from tipoblock";
-                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                SQLiteCommand cmd = new SQLiteCommand(query, con.AbrirConexion());
 
                 DataTable dt = new DataTable();
                 SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
@@ -84,7 +84,7 @@ namespace CalcConstruc
             }
             finally
             {
-                con.Close();
+                con.CerrarConexion();
             }
         }
 
@@ -93,7 +93,7 @@ namespace CalcConstruc
             try
             {
                 string query = "select descripcion from tipomortero";
-                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                SQLiteCommand cmd = new SQLiteCommand(query, con.AbrirConexion());
 
                 DataTable dt = new DataTable();
                 SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
@@ -109,7 +109,7 @@ namespace CalcConstruc
             }
             finally
             {
-                con.Close();
+                con.CerrarConexion();
             }
         }
 
@@ -117,9 +117,8 @@ namespace CalcConstruc
         {
             try
             {
-                con.Open();
                 string consulta = "UPDATE datosconfig SET desperdicio = @desper, junta = @junta, precioBlock = @pBlock , precioCemento = @pCemento, PrecioArena = @pArena, idTipoBlock = @tBlock, idTipoMortero = @tMortero WHERE id = 1";
-                SQLiteCommand cmd = new SQLiteCommand(consulta, con);
+                SQLiteCommand cmd = new SQLiteCommand(consulta, con.AbrirConexion());
                 
                 cmd.Parameters.AddWithValue("@desper", txDesperdicio_CF.Text);
                 cmd.Parameters.AddWithValue("@junta", txJunta_CF.Text);
@@ -147,7 +146,7 @@ namespace CalcConstruc
             }
             finally
             {
-                con.Close();
+                con.CerrarConexion();
             }
         }
 

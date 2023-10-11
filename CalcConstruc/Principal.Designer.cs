@@ -31,21 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txPrecioArenaD = new System.Windows.Forms.TextBox();
-            this.txPrecioCementoD = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txPrecioBlockD = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txJunta = new System.Windows.Forms.TextBox();
-            this.txDesperdicioD = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbTipoMorteroD = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cbTipoBlock = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.chCompleta = new System.Windows.Forms.CheckBox();
             this.txVigasColumnasD = new System.Windows.Forms.TextBox();
             this.txVentanasD = new System.Windows.Forms.TextBox();
@@ -80,7 +65,7 @@
             this.dgCosto = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lbC = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbCostoR = new System.Windows.Forms.Label();
             this.txCantidadBlockR = new System.Windows.Forms.TextBox();
@@ -92,10 +77,6 @@
             this.saliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -105,178 +86,6 @@
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txPrecioArenaD);
-            this.groupBox1.Controls.Add(this.txPrecioCementoD);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txPrecioBlockD);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.txJunta);
-            this.groupBox1.Controls.Add(this.txDesperdicioD);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.cbTipoMorteroD);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.cbTipoBlock);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 315);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 313);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos";
-            // 
-            // txPrecioArenaD
-            // 
-            this.txPrecioArenaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPrecioArenaD.Location = new System.Drawing.Point(213, 259);
-            this.txPrecioArenaD.Name = "txPrecioArenaD";
-            this.txPrecioArenaD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioArenaD.TabIndex = 11;
-            this.txPrecioArenaD.Text = "1395";
-            // 
-            // txPrecioCementoD
-            // 
-            this.txPrecioCementoD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPrecioCementoD.Location = new System.Drawing.Point(213, 223);
-            this.txPrecioCementoD.Name = "txPrecioCementoD";
-            this.txPrecioCementoD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioCementoD.TabIndex = 11;
-            this.txPrecioCementoD.Text = "470";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 264);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 22);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Precio Arena";
-            // 
-            // txPrecioBlockD
-            // 
-            this.txPrecioBlockD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPrecioBlockD.Location = new System.Drawing.Point(213, 187);
-            this.txPrecioBlockD.Name = "txPrecioBlockD";
-            this.txPrecioBlockD.Size = new System.Drawing.Size(177, 30);
-            this.txPrecioBlockD.TabIndex = 10;
-            this.txPrecioBlockD.Text = "45";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(27, 231);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(152, 22);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Precio Cemento";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(27, 195);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(122, 22);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Precio Block";
-            // 
-            // txJunta
-            // 
-            this.txJunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txJunta.Location = new System.Drawing.Point(213, 109);
-            this.txJunta.Name = "txJunta";
-            this.txJunta.Size = new System.Drawing.Size(177, 30);
-            this.txJunta.TabIndex = 8;
-            this.txJunta.Text = "0.02";
-            // 
-            // txDesperdicioD
-            // 
-            this.txDesperdicioD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txDesperdicioD.Location = new System.Drawing.Point(213, 73);
-            this.txDesperdicioD.Name = "txDesperdicioD";
-            this.txDesperdicioD.Size = new System.Drawing.Size(177, 30);
-            this.txDesperdicioD.TabIndex = 7;
-            this.txDesperdicioD.Text = "5";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Junta";
-            // 
-            // cbTipoMorteroD
-            // 
-            this.cbTipoMorteroD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoMorteroD.FormattingEnabled = true;
-            this.cbTipoMorteroD.Items.AddRange(new object[] {
-            "1:2",
-            "1:3",
-            "1:4"});
-            this.cbTipoMorteroD.Location = new System.Drawing.Point(213, 148);
-            this.cbTipoMorteroD.Name = "cbTipoMorteroD";
-            this.cbTipoMorteroD.Size = new System.Drawing.Size(177, 33);
-            this.cbTipoMorteroD.TabIndex = 9;
-            this.cbTipoMorteroD.Text = "1:3";
-            this.cbTipoMorteroD.SelectedIndexChanged += new System.EventHandler(this.cbTipoMorteroD_SelectedIndexChanged);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(27, 156);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(152, 22);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Tipo de Mortero";
-            // 
-            // cbTipoBlock
-            // 
-            this.cbTipoBlock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoBlock.FormattingEnabled = true;
-            this.cbTipoBlock.Items.AddRange(new object[] {
-            "8",
-            "6",
-            "4"});
-            this.cbTipoBlock.Location = new System.Drawing.Point(213, 34);
-            this.cbTipoBlock.Name = "cbTipoBlock";
-            this.cbTipoBlock.Size = new System.Drawing.Size(177, 33);
-            this.cbTipoBlock.TabIndex = 6;
-            this.cbTipoBlock.Text = "6";
-            this.cbTipoBlock.SelectedIndexChanged += new System.EventHandler(this.cbTipoBlock_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tipo de Block";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 22);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "% Desperdicio";
             // 
             // chCompleta
             // 
@@ -389,9 +198,9 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(698, 652);
+            this.btnCalcular.Location = new System.Drawing.Point(234, 527);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(196, 149);
+            this.btnCalcular.Size = new System.Drawing.Size(196, 113);
             this.btnCalcular.TabIndex = 15;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -427,7 +236,7 @@
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.txPuertasD);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(23, 646);
+            this.groupBox4.Location = new System.Drawing.Point(23, 337);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(403, 170);
             this.groupBox4.TabIndex = 6;
@@ -523,9 +332,9 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(487, 652);
+            this.btnLimpiar.Location = new System.Drawing.Point(23, 527);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(200, 149);
+            this.btnLimpiar.Size = new System.Drawing.Size(200, 113);
             this.btnLimpiar.TabIndex = 16;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -660,15 +469,15 @@
             this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // label23
+            // lbC
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(587, 565);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(124, 25);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Costo Total";
+            this.lbC.AutoSize = true;
+            this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbC.Location = new System.Drawing.Point(587, 565);
+            this.lbC.Name = "lbC";
+            this.lbC.Size = new System.Drawing.Size(124, 25);
+            this.lbC.TabIndex = 1;
+            this.lbC.Text = "Costo Total";
             // 
             // panel3
             // 
@@ -779,49 +588,19 @@
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 81);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 22);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "% Desperdicio";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 39);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 22);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Tipo de Block";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 117);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 22);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Junta";
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(928, 843);
+            this.ClientSize = new System.Drawing.Size(928, 672);
             this.Controls.Add(this.txCantidadAguaR);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txCantidadArenaR);
             this.Controls.Add(this.dgCosto);
             this.Controls.Add(this.txCantidadCementoR);
             this.Controls.Add(this.dgMateriales);
-            this.Controls.Add(this.label23);
+            this.Controls.Add(this.lbC);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txCantidadBlockR);
@@ -829,7 +608,6 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -838,8 +616,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CALCULO DE MATERIALES";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -860,34 +636,20 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbBaseD;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.ComboBox cbTipoBlock;
         private System.Windows.Forms.TextBox txBase;
-        private System.Windows.Forms.TextBox txJunta;
-        private System.Windows.Forms.TextBox txDesperdicioD;
         private System.Windows.Forms.TextBox txAltura;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbAlturaD;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txAreaTotalR;
         private System.Windows.Forms.TextBox txVentanasD;
         private System.Windows.Forms.TextBox txPuertasD;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cbTipoMorteroD;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txVigasColumnasD;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox chCompleta;
-        private System.Windows.Forms.TextBox txPrecioBlockD;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txPrecioCementoD;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox cbTipoAreaD;
@@ -908,23 +670,18 @@
         private System.Windows.Forms.DataGridView dgCosto;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lbC;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbCostoR;
         private System.Windows.Forms.TextBox txCantidadBlockR;
         private System.Windows.Forms.TextBox txCantidadCementoR;
         private System.Windows.Forms.TextBox txCantidadArenaR;
         private System.Windows.Forms.TextBox txCantidadAguaR;
-        private System.Windows.Forms.TextBox txPrecioArenaD;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saliToolStripMenuItem;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
     }
 }
 
