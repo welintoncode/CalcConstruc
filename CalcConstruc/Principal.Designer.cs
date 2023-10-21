@@ -73,8 +73,6 @@
             this.txCantidadArenaR = new System.Windows.Forms.TextBox();
             this.txCantidadAguaR = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox4.SuspendLayout();
@@ -551,7 +549,6 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inicioToolStripMenuItem,
             this.configuracionToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -559,20 +556,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(928, 33);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // inicioToolStripMenuItem
-            // 
-            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saliToolStripMenuItem});
-            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
-            this.inicioToolStripMenuItem.Text = "Inicio";
-            // 
-            // saliToolStripMenuItem
-            // 
-            this.saliToolStripMenuItem.Name = "saliToolStripMenuItem";
-            this.saliToolStripMenuItem.Size = new System.Drawing.Size(141, 34);
-            this.saliToolStripMenuItem.Text = "Sali";
             // 
             // configuracionToolStripMenuItem
             // 
@@ -678,10 +661,8 @@
         private System.Windows.Forms.TextBox txCantidadArenaR;
         private System.Windows.Forms.TextBox txCantidadAguaR;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saliToolStripMenuItem;
     }
 }
 

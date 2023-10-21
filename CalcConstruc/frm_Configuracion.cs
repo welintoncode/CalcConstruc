@@ -119,7 +119,7 @@ namespace CalcConstruc
             {
                 string consulta = "UPDATE datosconfig SET desperdicio = @desper, junta = @junta, precioBlock = @pBlock , precioCemento = @pCemento, PrecioArena = @pArena, idTipoBlock = @tBlock, idTipoMortero = @tMortero WHERE id = 1";
                 SQLiteCommand cmd = new SQLiteCommand(consulta, con.AbrirConexion());
-                
+
                 cmd.Parameters.AddWithValue("@desper", txDesperdicio_CF.Text);
                 cmd.Parameters.AddWithValue("@junta", txJunta_CF.Text);
                 cmd.Parameters.AddWithValue("@pBlock", int.Parse(txPrecioBlock_CF.Text));
@@ -138,7 +138,7 @@ namespace CalcConstruc
                 {
                     MessageBox.Show("No se encontró un registro con ese ID.");
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -148,7 +148,7 @@ namespace CalcConstruc
             {
                 con.CerrarConexion();
             }
-        }
+         }
 
     }
 

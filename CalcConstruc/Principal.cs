@@ -70,16 +70,16 @@ namespace CalcConstruc
         public void cargaDatos()
         {
             string datos = "select desperdicio, junta, precioBlock, precioCemento, PrecioArena from datosconfig";
-            SQLiteCommand cmd_datos = new SQLiteCommand(datos, con.AbrirConexion());
-            SQLiteDataReader dr_datos = cmd_datos.ExecuteReader();
+            SQLiteCommand cmd_datosConfig = new SQLiteCommand(datos, con.AbrirConexion());
+            SQLiteDataReader dr_datosConfig = cmd_datosConfig.ExecuteReader();
 
-            if (dr_datos.Read())
+            if (dr_datosConfig.Read())
             {
-                desperdicio = Convert.ToDouble(dr_datos[0].ToString());
-                junta = Convert.ToDouble(dr_datos[1].ToString());
-                precioBlock = Convert.ToDouble(dr_datos[2].ToString());
-                precioCemento = Convert.ToDouble(dr_datos[3].ToString());
-                precioArena = Convert.ToDouble(dr_datos[4].ToString());
+                desperdicio = Convert.ToDouble(dr_datosConfig[0].ToString());
+                junta = Convert.ToDouble(dr_datosConfig[1].ToString());
+                precioBlock = Convert.ToDouble(dr_datosConfig[2].ToString());
+                precioCemento = Convert.ToDouble(dr_datosConfig[3].ToString());
+                precioArena = Convert.ToDouble(dr_datosConfig[4].ToString());
             }
 
             con.CerrarConexion();
@@ -88,15 +88,15 @@ namespace CalcConstruc
         public void cargaDatosBlock()
         {
             string datos = "SELECT tb.descripcion, tb.anchoBlock, tb.alturaBlock, tb.largoBlock FROM tipoblock tb INNER JOIN datosconfig dc ON tb.id = dc.idTipoBlock";
-            SQLiteCommand cmd_datos = new SQLiteCommand(datos, con.AbrirConexion());
-            SQLiteDataReader dr_datos = cmd_datos.ExecuteReader();
+            SQLiteCommand cmd_datosBlock = new SQLiteCommand(datos, con.AbrirConexion());
+            SQLiteDataReader dr_datosBlock = cmd_datosBlock.ExecuteReader();
 
-            if (dr_datos.Read())
+            if (dr_datosBlock.Read())
             {
-                tipoBlock = Convert.ToDouble(dr_datos[0].ToString());
-                anchoBlock = Convert.ToDouble(dr_datos[1].ToString());
-                alturaBlock = Convert.ToDouble(dr_datos[2].ToString());
-                largoBlock = Convert.ToDouble(dr_datos[3].ToString());
+                tipoBlock = Convert.ToDouble(dr_datosBlock[0].ToString());
+                anchoBlock = Convert.ToDouble(dr_datosBlock[1].ToString());
+                alturaBlock = Convert.ToDouble(dr_datosBlock[2].ToString());
+                largoBlock = Convert.ToDouble(dr_datosBlock[3].ToString());
             }
 
             con.CerrarConexion();
