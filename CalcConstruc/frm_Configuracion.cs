@@ -23,9 +23,7 @@ namespace CalcConstruc
             InitializeComponent();
 
             CB_tipoBlock();            
-            CB_tipoMortero();
-
-            
+            CB_tipoMortero();            
 
             string tipoBlock = "SELECT tb.descripcion FROM tipoblock tb INNER JOIN datosconfig dc ON tb.id = dc.idTipoBlock";
             SQLiteCommand cmd_tipoBlock = new SQLiteCommand(tipoBlock, con.AbrirConexion());
@@ -61,8 +59,6 @@ namespace CalcConstruc
 
             con.CerrarConexion();
         }
-
-
 
         private void CB_tipoBlock()
         {

@@ -28,6 +28,7 @@ namespace CalcConstruc
         double precioCemento;
         double precioArena;
         double totalCostos = 0;
+        double calMortero = 0.25, fundaCal = 25;
         double tipoArea = 0;
 
         double areaPared = 0, areaPared2 = 0, areParedTotal, areaParedMenosHuecos;
@@ -40,6 +41,7 @@ namespace CalcConstruc
 
         double desperdicio;
         double junta;
+        double espesorEmpañete = 1.5;
         double tipoBlock;
         
  
@@ -124,55 +126,6 @@ namespace CalcConstruc
             txBase2D.Hide(); txAltura2D.Hide(); lbB2.Hide(); lbA2.Hide();
         }
 
-        //VALIDA EL TIPO DE BLOCK
-        private void cbTipoBlock_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (cbTipoBlock.SelectedItem != null)
-            //{
-            //    string valor = cbTipoBlock.SelectedItem.ToString();
-
-            //    switch (Convert.ToInt32(valor))
-            //    {
-            //        case 8:
-            //            anchoBlock = 0.20;
-            //            alturaBlock = 0.20;
-            //            largoBlock = 0.40;
-            //            break;
-            //        case 6:
-            //            anchoBlock = 0.15;
-            //            alturaBlock = 0.20;
-            //            largoBlock = 0.40;
-            //            break;
-            //        case 4:
-            //            anchoBlock = 0.10;
-            //            alturaBlock = 0.20;
-            //            largoBlock = 0.40;
-            //            break;
-            //    }
-            //}
-        }
-
-        //VALIDA EL TIPO DE MORTERO
-        private void cbTipoMorteroD_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (cbTipoMorteroD.SelectedItem != null)
-            //{
-            //    int selectedIndex = cbTipoMorteroD.SelectedIndex;
-
-            //    switch (Convert.ToInt32(selectedIndex))
-            //    {
-            //        case 0:
-            //            cementokg = 610; arenaM3 = 0.97; aguaL = 250;
-            //            break;
-            //        case 1:
-            //            cementokg = 454; arenaM3 = 1.10; aguaL = 250;
-            //            break;
-            //        case 2:
-            //            cementokg = 364; arenaM3 = 1.16; aguaL = 240;
-            //            break;
-            //    }
-            //}
-        }
 
         //VALIDA TIPO DE AREA
         private void cbTipoAreaD_SelectedIndexChanged(object sender, EventArgs e)
@@ -283,6 +236,29 @@ namespace CalcConstruc
             aguaPorMetro = volumenMortero * aguaL;
             aguaPorMetroMasDesperdicio = Math.Round(((desperdicio / 100) * aguaPorMetro) + aguaPorMetro);
 
+
+            //****CALCULO DE MATERIALES EMPAÑETE****
+
+            //MORTERO DE EMPAÑETE
+            double VolumenMorteroEmpañete = (areaParedMenosHuecos * espesorEmpañete) * 1 / 100;
+
+            //CANTIDAD CEMENTO DE EMPAÑETE
+            double cementoEpañete = cementokg * VolumenMorteroEmpañete;
+            double cementoEpañeteMasDesperdicio = (cementoEpañete * (desperdicio / 100) + cementoEpañete) / fundaCemento;
+
+            //CANTIDAD CAL DE EMPAÑETE
+            double calEmpañete = cementokg * calMortero * VolumenMorteroEmpañete;
+            double calPorMetroMasDesperdicio = Math.Ceiling((calEmpañete * (desperdicio / 100) + calEmpañete) / fundaCal);
+
+            //CANTIDAD ARENA DE EMPAÑETE
+            double arenaEmpañete = arenaM3 * VolumenMorteroEmpañete;
+            double arenaEmpañeteMasDesperdicio = (arenaEmpañete * (desperdicio / 100) + arenaEmpañete);
+
+            //CANTIDAD AGUA DE EMPAÑETE
+            double aguaEmpañete = aguaL * VolumenMorteroEmpañete;
+            double aguaEmpañeteMasDesperdicio = (aguaEmpañete * (desperdicio / 100) + aguaEmpañete);
+
+
             //COSTO DE BLOCKS
             precioBlock = precioBlock * cantidadBlockTotalMasDesperdicio;
 
@@ -292,31 +268,37 @@ namespace CalcConstruc
             //COSTO ARENA
             precioArena = precioArena * arenaPorMetroMasDesperdicio;
 
+            //PRECIO ARENA EMPAÑETE
+            double precioArenaEmpañete = 1800;
+            precioArenaEmpañete = precioArenaEmpañete * arenaEmpañeteMasDesperdicio;
 
-            //RESULTADOS MATERIALES
-            txCantidadBlockR.Text = cantidadBlockTotalMasDesperdicio.ToString();
-            txCantidadCementoR.Text = cementoPorMetroMasDesperdicio.ToString();
-            txCantidadArenaR.Text = arenaPorMetroMasDesperdicio.ToString("F3");
-            txCantidadAguaR.Text = aguaPorMetroMasDesperdicio.ToString();
-            txAreaTotalR.Text = areaParedMenosHuecos.ToString();
+            //PRECIO CAL EMPAÑETE
+            double precioCalEmpañete = 420;
+            precioCalEmpañete = precioCalEmpañete * calPorMetroMasDesperdicio;
+
 
             //RESULTADOS COSTOS
-            totalCostos = precioBlock + precioCemento + precioArena;
+            totalCostos = (precioBlock + precioCemento + precioArena) + (precioArenaEmpañete + precioCalEmpañete);
 
             //TABLA DE MATERIALES
             dgMateriales.Rows.Clear();
             string Tblock = anchoBlock.ToString("f2") + "X" + alturaBlock.ToString("f2") + "X" + largoBlock.ToString("f2");
             dgMateriales.Rows.Add("Block", cantidadBlockTotalMasDesperdicio, Tblock);
-            dgMateriales.Rows.Add("Cemento", cementoPorMetroMasDesperdicio, "Funda 42.5kg");
-            dgMateriales.Rows.Add("Arena", arenaPorMetroMasDesperdicio.ToString("f3"), "m3");
-            dgMateriales.Rows.Add("Agua", aguaPorMetroMasDesperdicio, "Litros");
+            dgMateriales.Rows.Add("Cemento", (cementoPorMetroMasDesperdicio + Math.Ceiling(cementoEpañeteMasDesperdicio)), "Funda 42.5kg");
+            dgMateriales.Rows.Add("Arena", (arenaPorMetroMasDesperdicio).ToString("f3"), "m3");
+            dgMateriales.Rows.Add("Arena Empañete", (arenaEmpañeteMasDesperdicio).ToString("f3"), "m3");
+            dgMateriales.Rows.Add("Agua", (aguaPorMetroMasDesperdicio + aguaEmpañeteMasDesperdicio), "Litros");
+            dgMateriales.Rows.Add("Cal", calPorMetroMasDesperdicio, "Funda 25kg");
 
             //TABLA DE COSTOS
             dgCosto.Rows.Clear();
             dgCosto.Rows.Add("Costo Block", precioBlock.ToString("C"));
             dgCosto.Rows.Add("Costo Cemento", precioCemento.ToString("C"));
             dgCosto.Rows.Add("Costo Arena", precioArena.ToString("C"));
+            dgCosto.Rows.Add("Costo Arena Empañete", precioArenaEmpañete.ToString("C"));
+            dgCosto.Rows.Add("Costo Cal", precioCalEmpañete.ToString("C"));
             lbCostoR.Text = totalCostos.ToString("C");
+
 
         }
     }
